@@ -1,0 +1,17 @@
+name: "extension-context-bridge"
+description: "Coordinates message passing between content scripts, extension background workers, and agent backends."
+input_schema:
+  type: object
+  properties:
+    message_type:
+      type: string
+      description: "Type of extension cross-context message."
+      enum: ["get_tab_info", "inject_script", "open_tab", "close_tab"]
+    tab_id:
+      type: integer
+      description: "Target browser tab ID."
+    payload:
+      type: object
+      description: "Arbitrary structured payload dictionary."
+  required:
+    - message_type

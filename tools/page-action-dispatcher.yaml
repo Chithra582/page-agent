@@ -1,0 +1,22 @@
+name: "page-action-dispatcher"
+description: "Dispatches synthetic clicks, keystrokes, scrolls, and drag-and-drop actions to target web elements."
+input_schema:
+  type: object
+  properties:
+    element_id:
+      type: string
+      description: "Identifier of the resolved DOM element."
+    action:
+      type: string
+      description: "Type of user interaction to perform."
+      enum: ["click", "type", "press_enter", "hover", "scroll_to", "select_option"]
+    text_value:
+      type: string
+      description: "Text to type when action is 'type'."
+    highlight_first:
+      type: boolean
+      description: "Whether to display visual highlight overlay before dispatching."
+      default: true
+  required:
+    - element_id
+    - action

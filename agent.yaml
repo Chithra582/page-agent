@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: "page-agent"
+version: "1.12.4"
+description: "AI-powered in-page UI agent and Chrome extension for autonomous web application interaction and automation."
+author: "Alibaba & OpenGAP Contributors"
+license: "MIT"
+metadata:
+  domain: "Developer Tools / Web UI Agents & In-Page Automation"
+  category: "Developer Tools"
+  framework: "Page Agent TypeScript Monorepo & MCP Protocol"
+  language: "TypeScript, JavaScript"
+skills:
+  - "in-page-dom-interaction"
+  - "visual-element-grounding"
+  - "browser-extension-automation"
+  - "web-mcp-protocol-server"
+tools:
+  - "dom-element-locator"
+  - "page-action-dispatcher"
+  - "web-page-inspector"
+  - "extension-context-bridge"
+  - "mcp-page-tool-router"

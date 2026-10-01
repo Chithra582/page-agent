@@ -1,0 +1,14 @@
+name: "mcp-page-tool-router"
+description: "Exposes in-page navigation and DOM query capabilities to external LLM clients via MCP JSON-RPC."
+input_schema:
+  type: object
+  properties:
+    method:
+      type: string
+      description: "MCP protocol method to call."
+      enum: ["tools/list", "tools/call", "resources/read", "ping"]
+    params:
+      type: object
+      description: "Parameters object matching the specified MCP method."
+  required:
+    - method

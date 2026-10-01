@@ -1,0 +1,17 @@
+name: "dom-element-locator"
+description: "Queries and resolves clickable, focusable, and input elements using semantic selectors and bounding boxes."
+input_schema:
+  type: object
+  properties:
+    description:
+      type: string
+      description: "Natural language description or label of the target element."
+    selector_hint:
+      type: string
+      description: "Optional CSS selector or ARIA role hint."
+    require_visible:
+      type: boolean
+      description: "Whether to restrict results strictly to elements currently visible in viewport."
+      default: true
+  required:
+    - description
